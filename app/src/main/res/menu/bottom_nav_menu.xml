@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/simpleCal"
+        android:title="Simple cal"
+        android:icon="@drawable/ic_calculator_simple"/>
+
+    <item
+        android:id="@+id/bmiCal"
+        android:title="bMI cal"
+        android:icon="@drawable/ic_calculator_bmi"/>
+    <item
+        android:id="@+id/tipsCall"
+        android:title="Tips cal"
+        android:icon="@drawable/ic_calculator_tips"/>
+
+</menu>

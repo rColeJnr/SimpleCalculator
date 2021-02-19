@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/calculatorFragment">
+
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.rick.simplecalculator.fragments.CalculatorFragment"
+        android:label="CalculatorFragment" />
+    <fragment
+        android:id="@+id/BMIfragment"
+        android:name="com.rick.simplecalculator.fragments.BMIfragment"
+        android:label="BMIfragment" />
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="com.rick.simplecalculator.fragments.TipsFragment"
+        android:label="TipsFragment" />
+</navigation>

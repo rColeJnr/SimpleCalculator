@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Theme.SimpleCalculator">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBMI"
+        android:text="BMI Calculator"
+        android:textSize="50sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="italic|bold"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWeight"
+        android:text="Peso: "
+        android:textSize="35sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="italic|bold"
+        android:textAlignment="textStart"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBMI"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHeight"
+        android:text="Altura: "
+        android:textSize="35sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="italic|bold"
+        android:textAlignment="textStart"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWeight"/>
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="48dp"
+        android:hint="digite o seu peso"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toRightOf="@id/tvWeight"
+        app:layout_constraintTop_toBottomOf="@id/tvBMI" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivAltura"
+        android:src="@drawable/ic_attention"
+        android:background="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etHeight"
+        app:layout_constraintTop_toTopOf="@id/etHeight"
+        app:layout_constraintLeft_toRightOf="@id/etHeight"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etHeight"
+        android:hint="digite a sua altura"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="43dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@id/tvHeight"
+        app:layout_constraintTop_toBottomOf="@id/etWeight"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPeso"
+        android:src="@drawable/ic_attention"
+        android:background="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/etWeight"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintLeft_toRightOf="@id/etWeight"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etWeight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalculaBMI"
+        android:text="Calcular BMI"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/etHeight"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResultadoBmi"
+        android:text="Resultado"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalculaBMI"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
